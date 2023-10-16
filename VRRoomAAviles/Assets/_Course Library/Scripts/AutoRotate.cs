@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class AutoRotate : MonoBehaviour
 {
-    public float rotationSpeed = 100;
+    [SerializeField]
+    private GameObject reticlePrefab;
+    private float rotationSpeed = 50.0f;
+    private Vector3 vector3;
 
     // Start is called before the first frame update
     void Start()
@@ -15,6 +18,10 @@ public class AutoRotate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Quaternion rotation = transform.rotation;
+        if (Application.isPlaying)
+        {
+            vector3 = new Vector3(0, 1, 0);
+            transform.Rotate(rotationSpeed * Time.deltaTime * vector3);
+        }
     }
 }

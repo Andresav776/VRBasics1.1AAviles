@@ -3,7 +3,9 @@ guid: ff79f0db6e9d6514b8690591da7a3573
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - reticlePrefab: {fileID: 8656087483511947524, guid: 50f8d835961353c4a8e0c4b77d7f8876,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
